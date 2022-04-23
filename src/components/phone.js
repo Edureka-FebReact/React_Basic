@@ -5,9 +5,12 @@ class Phone extends React.Component {
         super();
         this.state={phone : "Iphone7"}
     }
-
+    shouldComponentUpdate() {
+        return true // this defines that a change in the value of a state should or should not re-render the page
+    }
     upgrade = () => {
         this.setState({phone: "Iphone 10"});
+        console.log(this.phone);
     }
     render() {
         return (
