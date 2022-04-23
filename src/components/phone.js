@@ -13,7 +13,7 @@ class Phone extends React.Component {
            this.setState({phone: "Iphone 10"})
        }, 3000)
    }
-    getSnapshotBeforeUpdate( prevState) {
+    getSnapshotBeforeUpdate(prevProps, prevState) {
         document.getElementById("heading1").innerHTML= "my old phone was " + prevState.phone;
     }
     componentDidUpdate() {
