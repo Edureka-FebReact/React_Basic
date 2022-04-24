@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Header country="India" />
-      <Form/>
+      {/* <Form/> */}
       {/* <Phone/> */}
       {/* <Employee newDes="FullStack Dev" /> */}
       {/* <Footer company="Edureka" /> */}
